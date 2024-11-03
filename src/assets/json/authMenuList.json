@@ -1,0 +1,1353 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "path": "/person",
+      "name": "person",
+      "redirect": "/person/register",
+      "meta": {
+        "icon": "UserFilled",
+        "title": "人员管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/person/register",
+          "name": "register",
+          "component": "/person/register/RegisterIndex",
+          "meta": {
+            "title": "邀请注册",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/person/account",
+          "name": "account",
+          "redirect": "/person/account/clarify",
+          "meta": {
+            "title": "关联账户管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/person/account/clarify",
+              "name": "clarify",
+              "component": "/person/account/ClarifyIndex",
+              "meta": {
+                "title": "关联方账户结构及功能澄清",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/person/account/related",
+              "name": "related",
+              "component": "/person/account/RelatedAccount",
+              "meta": {
+                "title": "关联方账户",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/person/user",
+          "name": "account",
+          "redirect": "/person/user/clarify",
+          "meta": {
+            "title": "用户管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/person/user/clarify",
+              "name": "useClarify",
+              "component": "/person/user/ClarifyIndex",
+              "meta": {
+                "title": "用户账户结构及功能澄清",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/person/user/list",
+              "name": "list",
+              "component": "/person/user/UserList",
+              "meta": {
+                "title": "用户列表",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/finance",
+      "name": "finance",
+      "redirect": "/finance/AccountApplication",
+      "meta": {
+        "icon": "CreditCard",
+        "title": "财务管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/finance/AccountApplication",
+          "name": "AccountApplication",
+          "component": "/finance/AccountApplication",
+          "meta": {
+            "title": "持牌收单机构开户申请",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/finance/BankAccount",
+          "name": "BankAccount",
+          "component": "/finance/BankAccount",
+          "meta": {
+            "title": "银行VB账号开户",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/finance/CollectionAccount",
+          "name": "CollectionAccount",
+          "component": "/finance/CollectionAccount",
+          "meta": {
+            "title": "回款账户配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/finance/opening",
+          "name": "opening",
+          "redirect": "/finance/opening/ClarifyIndex",
+          "meta": {
+            "title": "开户行及账户信息查询",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/finance/opening/ClarifyIndex",
+              "name": "ClarifyIndex",
+              "component": "/finance/opening/ClarifyIndex",
+              "meta": {
+                "title": "百信银行VB账户使用说明及澄清事项",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/finance/opening/AccountInfo",
+              "name": "AccountInfo",
+              "component": "/finance/opening/AccountInfo",
+              "meta": {
+                "title": "开户行及银行账户信息",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/finance/capital",
+          "name": "capital",
+          "redirect": "/finance/capital/bank/BalanceSummary",
+          "meta": {
+            "title": "资金管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/finance/capital/bank",
+              "name": "bank",
+              "redirect": "/finance/capital/bank/BalanceSummary",
+              "meta": {
+                "title": "银行VB账户资金管理",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/finance/capital/bank/BalanceSummary",
+                  "name": "BankBalanceSummary",
+                  "component": "/finance/capital/bank/BalanceSummary",
+                  "meta": {
+                    "title": "银行VB余额汇总查询",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/bank/AccountRecharge",
+                  "name": "AccountRecharge",
+                  "component": "/finance/capital/bank/AccountRecharge",
+                  "meta": {
+                    "title": "银行账户充值",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/bank/EnterSummary",
+                  "name": "EnterSummary",
+                  "component": "/finance/capital/bank/EnterSummary",
+                  "meta": {
+                    "title": "银行账户入金汇总查询",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/bank/ExitSummary",
+                  "name": "ExitSummary",
+                  "component": "/finance/capital/bank/ExitSummary",
+                  "meta": {
+                    "title": "银行账户出金汇总查询",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/finance/capital/platform",
+              "name": "platform",
+              "redirect": "/finance/capital/platform/BalanceSummary",
+              "meta": {
+                "title": "平台方资金管理",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/finance/capital/platform/BalanceSummary",
+                  "name": "BalanceSummary",
+                  "component": "/finance/capital/platform/BalanceSummary",
+                  "meta": {
+                    "title": "余额汇总查询",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/AccountWithdrawal",
+                  "name": "AccountWithdrawal",
+                  "component": "/finance/capital/platform/AccountWithdrawal",
+                  "meta": {
+                    "title": "平台账户提现",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/AccountWithdrawalAudit",
+                  "name": "AccountWithdrawalAudit",
+                  "component": "/finance/capital/platform/AccountWithdrawalAudit",
+                  "meta": {
+                    "title": "平台账户提现审核",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/AccountTransfer",
+                  "name": "AccountTransfer",
+                  "component": "/finance/capital/platform/AccountTransfer",
+                  "meta": {
+                    "title": "平台账户转账",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/AccountTransferAudit",
+                  "name": "AccountTransferAudit",
+                  "component": "/finance/capital/platform/AccountTransferAudit",
+                  "meta": {
+                    "title": "平台账户转账审核",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/StoreTrade",
+                  "name": "StoreTrade",
+                  "component": "/finance/capital/platform/StoreTrade",
+                  "meta": {
+                    "title": "店铺订单交易查询",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/RelatedWithdrawal",
+                  "name": "RelatedWithdrawal",
+                  "component": "/finance/capital/platform/RelatedWithdrawal",
+                  "meta": {
+                    "title": "关联方提现审核",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/ChangeRecord",
+                  "name": "ChangeRecord",
+                  "component": "/finance/capital/platform/ChangeRecord",
+                  "meta": {
+                    "title": "平台方资金变更记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/platform/user-withdraw",
+                  "name": "UserWithdrawUnderChecked",
+                  "component": "/finance/capital/platform/UserWithdrawRecords",
+                  "meta": {
+                    "title": "用户提现审核",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/finance/capital/related",
+              "name": "capitalRelated",
+              "redirect": "/finance/capital/related/EnterpriseWallet",
+              "meta": {
+                "title": "关联方资金管理",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/finance/capital/related/EnterpriseWallet",
+                  "name": "EnterpriseWallet",
+                  "component": "/finance/capital/related/EnterpriseWallet",
+                  "meta": {
+                    "title": "关联方企业钱包",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/related/PersonalWallet",
+                  "name": "PersonalWallet",
+                  "component": "/finance/capital/related/PersonalWallet",
+                  "meta": {
+                    "title": "关联方个人钱包",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/related/WithdrawalRecords",
+                  "name": "WithdrawalRecords",
+                  "component": "/finance/capital/related/WithdrawalRecords",
+                  "meta": {
+                    "title": "关联方提现记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/related/ChangeRecordRelated",
+                  "name": "ChangeRecordRelated",
+                  "component": "/finance/capital/related/ChangeRecordRelated",
+                  "meta": {
+                    "title": "关联方资金变更记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/finance/capital/wallet",
+              "name": "wallet",
+              "redirect": "/finance/capital/wallet/UserWallet",
+              "meta": {
+                "title": "用户钱包资金管理",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/finance/capital/wallet/UserWallet",
+                  "name": "UserWallet",
+                  "component": "/finance/capital/wallet/UserWallet",
+                  "meta": {
+                    "title": "用户钱包账户",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/wallet/UserIntegral",
+                  "name": "UserIntegral",
+                  "component": "/finance/capital/wallet/UserIntegral",
+                  "meta": {
+                    "title": "用户积分账户",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/wallet/WalletChangeRecord",
+                  "name": "WalletChangeRecord",
+                  "component": "/finance/capital/wallet/WalletChangeRecord",
+                  "meta": {
+                    "title": "钱包变更记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/wallet/IntegralChangeRecord",
+                  "name": "IntegralChangeRecord",
+                  "component": "/finance/capital/wallet/IntegralChangeRecord",
+                  "meta": {
+                    "title": "积分变更记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/finance/capital/wallet/user-withdraw-records",
+                  "name": "UserWithdrawRecords",
+                  "component": "/finance/capital/wallet/UserWithdrawRecords",
+                  "meta": {
+                    "title": "用户提现记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/business",
+      "name": "business",
+      "redirect": "/business/supplychain/product-category",
+      "meta": {
+        "icon": "Document",
+        "title": "业务管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/business/supplychain",
+          "name": "BusinessSupplyChain",
+          "redirect": "/business/supplychain/product-category",
+          "meta": {
+            "title": "供应链商品管理",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/business/supplychain/product-category",
+              "name": "BusinessSupplyChainGoodsProductCategory",
+              "component": "/business/supplychain/ProductCategory/index",
+              "meta": {
+                "title": "商品分类",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/supplychain/product-manage",
+              "name": "BusinessSupplyChainGoodsProductManage",
+              "component": "/business/supplychain/ProductManage/index",
+              "meta": {
+                "title": "商品管理",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/supplychain/product-add",
+              "name": "BusinessSupplyChainGoodsProductAdd",
+              "component": "/business/supplychain/ProductManage/Details",
+              "meta": {
+                "title": "添加商品",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/supplychain/product-details/:id",
+              "name": "BusinessSupplyChainGoodsProductDetails",
+              "component": "/business/supplychain/ProductManage/Details",
+              "meta": {
+                "title": "商品详情",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/supplychain/product-preview/:id",
+              "name": "BusinessSupplyChainGoodsProductPreview",
+              "component": "/business/supplychain/ProductManage/Preview",
+              "meta": {
+                "title": "商品预览",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/supplychain/onsale",
+              "name": "BusinessSupplyChainGoodsOnSale",
+              "component": "/business/supplychain/OnSale/index",
+              "meta": {
+                "title": "销售中商品",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/supplychain/inventory-alert",
+              "name": "BusinessSupplyChainGoodsInventoryAlert",
+              "component": "/business/supplychain/InventoryAlert/index",
+              "meta": {
+                "title": "库存预警商品",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/supplychain/ecycle-bin",
+              "name": "BusinessSupplyChainGoodsRecycleBin",
+              "component": "/business/supplychain/RecycleBin/index",
+              "meta": {
+                "title": "商品回收站",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/business/tasks",
+          "name": "BusinessTasks",
+          "meta": {
+            "title": "赚钱任务管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/business/tasks/records",
+              "name": "BusinessTasksRecords",
+              "component": "/business/tasks/Records",
+              "meta": {
+                "title": "参与任务记录",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/business/logistics",
+          "name": "BusinessLogistics",
+          "redirect": "/business/logistics/settings",
+          "meta": {
+            "title": "物流管理",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/business/logistics/settings",
+              "name": "BusinessLogisticsSettings",
+              "component": "/business/logistics/Settings/index",
+              "meta": {
+                "title": "物流信息设置",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/business/operation",
+          "name": "BusinessOperation",
+          "meta": {
+            "title": "运营管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/business/operation/active-card-step",
+              "name": "BusinessOperationActiveCardStep",
+              "component": "/business/operation/ActiveCardStep",
+              "meta": {
+                "title": "开卡步骤",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/business/operation/user",
+              "name": "BusinessOperationUser",
+              "meta": {
+                "title": "用户管理",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/business/operation/user/bind-list",
+                  "name": "BusinessOperationUserBindList",
+                  "component": "/business/operation/user/BindList",
+                  "meta": {
+                    "title": "绑定列表",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/user/bank-card",
+                  "name": "BusinessOperationUserBankCard",
+                  "component": "/business/operation/user/BankCard",
+                  "meta": {
+                    "title": "提现银行卡",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/user/address",
+                  "name": "BusinessOperationUserAddress",
+                  "component": "/business/operation/user/Address",
+                  "meta": {
+                    "title": "地址记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/business/operation/value-added",
+              "name": "BusinessOperationValueAdded",
+              "meta": {
+                "title": "增值服务计费",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/business/operation/value-added/message",
+                  "name": "BusinessOperationValueAddedMessage",
+                  "component": "/business/operation/valueAdded/Message",
+                  "meta": {
+                    "title": "短信发送记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/verify",
+                  "name": "BusinessOperationValueAddedVerify",
+                  "component": "/business/operation/valueAdded/Verify",
+                  "meta": {
+                    "title": "实名认证记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/ocr",
+                  "name": "BusinessOperationValueAddedOCR",
+                  "component": "/business/operation/valueAdded/OCR",
+                  "meta": {
+                    "title": "证照识别记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/esign",
+                  "name": "BusinessOperationValueAddedESign",
+                  "component": "/business/operation/valueAdded/ESign",
+                  "meta": {
+                    "title": "电子签约记录",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/esign-package",
+                  "name": "BusinessOperationValueAddedEsignPackage",
+                  "component": "/business/operation/valueAdded/EsignPackage",
+                  "meta": {
+                    "title": "电子签约套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/mauth-package",
+                  "name": "BusinessOperationValueAddedVerifyPackage",
+                  "component": "/business/operation/valueAdded/VerifyPackage",
+                  "meta": {
+                    "title": "实名认证套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/sms-package",
+                  "name": "BusinessOperationValueAddedMessagePackage",
+                  "component": "/business/operation/valueAdded/MessagePackage",
+                  "meta": {
+                    "title": "短信套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/ocr-package",
+                  "name": "BusinessOperationValueAddedOcrPackage",
+                  "component": "/business/operation/valueAdded/OcrPackage",
+                  "meta": {
+                    "title": "证照识别套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/business/operation/esigns",
+              "name": "BusinessOpertationEsigns",
+              "meta": {
+                "title": "电子签约管理",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/business/operation/esigns/templates",
+                  "name": "BusinessOperationEsignsTemplates",
+                  "component": "/business/operation/Esigns/SignTemplates/index",
+                  "meta": {
+                    "title": "签约模版管理",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/esigns/links",
+                  "name": "BusinessOperationEsignsLinks",
+                  "component": "/business/operation/Esigns/SignLinks/index",
+                  "meta": {
+                    "title": "签约任务管理",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/esign-package",
+                  "name": "BusinessOperationValueAddedEsignPackage",
+                  "component": "/business/operation/valueAdded/EsignPackage",
+                  "meta": {
+                    "title": "电子签约套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/mauth-package",
+                  "name": "BusinessOperationValueAddedVerifyPackage",
+                  "component": "/business/operation/valueAdded/VerifyPackage",
+                  "meta": {
+                    "title": "实名认证套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/sms-package",
+                  "name": "BusinessOperationValueAddedMessagePackage",
+                  "component": "/business/operation/valueAdded/MessagePackage",
+                  "meta": {
+                    "title": "短信套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/business/operation/value-added/ocr-package",
+                  "name": "BusinessOperationValueAddedOcrPackage",
+                  "component": "/business/operation/valueAdded/OcrPackage",
+                  "meta": {
+                    "title": "证照识别套餐",
+                    "isLink": "",
+                    "isHide": true,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "/business/afterSalesManage",
+          "name": "AfterSalesManage",
+          "redirect": "/business/afterSalesManage/customerComplaint/weChatPay",
+          "meta": {
+            "title": "售后管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/business/afterSalesManage/customerComplaint",
+              "name": "customerComplaint",
+              "component": "/business/afterSalesManage/customerComplaint/weChatPay",
+              "meta": {
+                "title": "收单机构客诉",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/business/afterSalesManage/customerComplaint/weChatPay",
+                  "name": "weChatPay",
+                  "component": "/business/afterSalesManage/customerComplaint/weChatPay",
+                  "meta": {
+                    "title": "微信支付",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/inventory",
+      "name": "Inventory",
+      "redirect": "/inventory/device-category",
+      "meta": {
+        "icon": "Box",
+        "title": "物品管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/inventory/device-category",
+          "name": "InventoryDeviceCategory",
+          "component": "/inventory/DeviceCategory/index",
+          "meta": {
+            "title": "设备分类",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/inventory/device-code-import",
+          "name": "InventoryDeviceCodeImport",
+          "component": "/inventory/DeviceCode/index",
+          "meta": {
+            "title": "设备码导入",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/inventory/qrcode-gen-download",
+          "name": "InventoryQrCodeGenDownload",
+          "component": "/inventory/QrCodeGenDownload/index",
+          "meta": {
+            "title": "二维码生成和下载",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/inventory/qrcode-laser-engraving",
+          "name": "InventoryQrCodeLaserEngraving",
+          "component": "/inventory/LaserEngraving/index",
+          "meta": {
+            "title": "二维码镭雕入库",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/inventory/qrcode-list",
+          "name": "InventoryQrCodeList",
+          "component": "/inventory/QrCodeList/index",
+          "meta": {
+            "title": "二维码清单",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/inventory/access",
+          "name": "InventoryAccess",
+          "component": "/inventory/Access/index",
+          "meta": {
+            "title": "平台管理员权限配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/inventory/qrcodes",
+          "name": "InventoryQrcodeDeliverySetting",
+          "meta": {
+            "title": "二维码分配与配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/inventory/qrcodes/features",
+              "name": "InventoryQrcodesFeatures",
+              "component": "/inventory/qrcode/FeatureSetting/index",
+              "meta": {
+                "title": "功能配置",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/inventory/qrcodes/benefits",
+              "name": "InventoryQrcodesBenefits",
+              "component": "/inventory/qrcode/BenefitSetting/index",
+              "meta": {
+                "title": "权益配置",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/inventory/qrcodes/apis",
+              "name": "InventoryQrcodesApis",
+              "component": "/inventory/qrcode/ApiSetting",
+              "meta": {
+                "title": "接口配置",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/inventory/qrcodes/split",
+              "name": "InventoryQrcodeDeliverySettingSplit",
+              "meta": {
+                "title": "分润配置",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/inventory/qrcodes/split/hardware",
+                  "name": "InventoryQrcodesSplitHardware",
+                  "component": "/inventory/qrcode/split/Hardware",
+                  "meta": {
+                    "title": "硬件设备分润配置",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/inventory/qrcodes/split/earning-tasks",
+                  "name": "InventoryQrcodesSplitEarningTasks",
+                  "component": "/inventory/qrcode/split/EarningTasks",
+                  "meta": {
+                    "title": "赚钱任务产品分润配置",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/inventory/qrcodes/split/supply-chain",
+                  "name": "InventoryQrcodesSplitSupplyChain",
+                  "component": "/inventory/qrcode/split/SupplyChain",
+                  "meta": {
+                    "title": "供应链商品分润配置",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/inventory/qrcodes/split/data-plans",
+                  "name": "InventoryQrcodesSplitDataPlans",
+                  "component": "/inventory/qrcode/split/DataPlans",
+                  "meta": {
+                    "title": "流量套餐产品分润配置",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/system",
+      "name": "system",
+      "redirect": "/system/accountManage",
+      "meta": {
+        "icon": "Tools",
+        "title": "系统管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/system/menuMange",
+          "name": "menuMange",
+          "component": "/system/menuMange/index",
+          "meta": {
+            "title": "菜单管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "name": "about",
+      "component": "/about/index",
+      "meta": {
+        "icon": "InfoFilled",
+        "title": "关于项目",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    }
+  ],
+  "msg": "成功"
+}
